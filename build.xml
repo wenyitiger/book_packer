@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project book_packer">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Users/yiwen/Downloads/Bookpacker.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="Test"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/yiwen/Documents/workspace/book_packer/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/yiwen/Documents/workspace/book_packer/src/org.json-20120521.jar"/>
+        </jar>
+    </target>
+</project>
