@@ -1,0 +1,14 @@
+Once your solution is completed please add an EXTENSIONS.txt file to your solution that notes how your application could be extended to handle the following:
+
+Domains beyond Amazon.com
+I've written the CrawlerBase class and we can pull out from any urls or files by extends this class and write the parsing function we need .
+
+
+Products beyond just simply books.
+By implement different parse functions and different data (else than Book Box)  we can deal with any types of things that can be refer to an object.
+
+
+
+Parse and ship 2,000,000 books (in a reasonably time frame; e.g., polynomial time) instead of merely 20.
+for this one I think I would do a multi-thread program that run may be 1000 parsing program at the same time. use  a thread pool to deal with conflict and
+add to the final result. ie:database.
